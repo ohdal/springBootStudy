@@ -95,7 +95,7 @@ public class ItemApiLogicService implements CrudInterface<ItemApiRequest, ItemAp
                 .brandName(item.getBrandName())
                 .registeredAt(item.getRegisteredAt())
                 .unregisteredAt(item.getUnregisteredAt())
-                .partnerId(item.getId())
+                .partnerId(item.getPartner().getId())
                 .build();
 
         return Header.OK(body);
