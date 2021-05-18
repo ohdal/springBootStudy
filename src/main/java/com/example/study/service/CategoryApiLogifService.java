@@ -6,6 +6,7 @@ import com.example.study.model.network.Header;
 import com.example.study.model.network.request.CategoryApiRequest;
 import com.example.study.model.network.response.CategoryApiResponse;
 import com.example.study.repository.CategoryRepository;
+import com.example.study.repository.PartnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,9 @@ public class CategoryApiLogifService implements CrudInterface<CategoryApiRequest
 
     @Autowired
     private CategoryRepository categoryRepository;
+
+    @Autowired
+    private PartnerRepository partnerRepository;
 
     @Override
     public Header<CategoryApiResponse> create(Header<CategoryApiRequest> request) {
