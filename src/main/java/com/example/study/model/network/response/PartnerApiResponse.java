@@ -30,7 +30,7 @@ public class PartnerApiResponse {
 
     private LocalDateTime registeredAt;
 
-    private String unregisteredAt;
+    private LocalDateTime unregisteredAt;
 
     private Long categoryId;
 }

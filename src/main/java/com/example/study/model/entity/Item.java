@@ -63,5 +63,14 @@ public class Item {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "item")
     private List<OrderDetail> orderDetailList;
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Item) {
+            Item item = (Item) obj;
+            return (this.id == item.getId());
+        }
+        return false;
+    }
 }
 

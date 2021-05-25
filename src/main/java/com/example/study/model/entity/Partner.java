@@ -42,7 +42,7 @@ public class Partner {
 
     private LocalDateTime registeredAt;
 
-    private String unregisteredAt;
+    private LocalDateTime unregisteredAt;
 
     @CreatedDate
     private LocalDateTime createdAt;
